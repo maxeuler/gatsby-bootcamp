@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "gatsby build",
-		"develop": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop"
+		"develop": "env-cmd cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop"
 	},
 	"keywords": [],
 	"author": "",
@@ -17,6 +17,7 @@
 		"gatsby-plugin-sharp": "^2.2.8",
 		"gatsby-remark-images": "^3.1.7",
 		"gatsby-remark-relative-images": "^0.2.2",
+		"gatsby-source-contentful": "^2.1.14",
 		"gatsby-source-filesystem": "^2.1.5",
 		"gatsby-transformer-remark": "^2.6.8",
 		"node-sass": "^4.12.0",
@@ -26,6 +27,7 @@
 	"devDependencies": {
 		"babel-eslint": "^9.0.0",
 		"cross-env": "^5.2.0",
+		"env-cmd": "^9.0.3",
 		"eslint": "^5.16.0",
 		"eslint-config-airbnb": "^17.1.1",
 		"eslint-config-prettier": "^4.3.0",
